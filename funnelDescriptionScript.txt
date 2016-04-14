@@ -1,0 +1,14 @@
+<script>
+	//variable that is going to store funnel description//
+	funnelDescription='false';
+	//section you wish to find in URL//
+	lookFor='tryit';
+	
+	if(!!~document.URL.indexOf(lookFor))
+		{
+			funnelDescription=lookFor;
+		}
+	
+    dataLayer.push({'Funnel Description':funnelDescription, event: funnelDescription});
+
+</script>
